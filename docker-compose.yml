@@ -1,0 +1,21 @@
+version: '2'
+services:
+
+  express: # Express server için tanımlama
+    build: express-server # imaj adı
+    ports: # port yönlendirmeleri
+      - "3000:3000"
+    volumes:
+      - ./express-server/:/var/www/app
+  solr:
+    image: solr
+    ports:
+     - "8983:8983"
+    volumes:
+      - data:/opt/solr/server/solr/mycores
+    entrypoint:
+      - docker-entrypoint.sh
+      - solr-precreate
+      - mycore
+volumes:
+  data:

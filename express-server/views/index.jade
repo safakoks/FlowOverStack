@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Search Bar
+    link(rel='stylesheet', href='css/style.css')
+  body
+    html(lang='en')
+      head
+        meta(charset='utf-8')
+        title Search
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
+
+
+      body.align
+        .col-md-12
+          img(src='images/logo.png',class='img-responsive',style="margin-bottom:2%;margin-top:5%")
+          form.search(action='getAnswer', method='POST')
+            .form__field(style="font-size:16px")
+              input.form__input(type='search', name='title', placeholder='What are you looking for?')
+              input.button(type='submit', value='Search')
+        br
+        div.panel.border.border-success.col-md-12(style="margin:10px;padding:5px;font-size:16px")
+          h1(style:"text-align:center") Result
+          div.panel-header
+            div.h3.my-title
+          hr
+          div.panel-body(style:"border : solid 2px grey;")
+            div.col-md-12
+              div.row
+                div.col-md-4-offset
+                div.col-md-4.container.my-question
+              hr
+              div.row
+                div.col-md-4-offset
+                div.col-md-4.container.my-answer
+
+
+
+
+
+
+
+      script(src='https://code.jquery.com/jquery-3.3.1.js', integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=', crossorigin='anonymous')
+      script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+      script(src='/javascripts/custom.js')
