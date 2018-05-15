@@ -1,6 +1,6 @@
-<!-- ## VoIC=Voice in Context
+FlowOverStack
 
-The aim of this project is to enabling people who are trying to learn a new language to pronounce their words more accurately by bringing the videos of people who know the language better. -->
+Just Prototype
 
 Requirements:
 - SolR
